@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TaskPageRoutingModule } from './task-routing.module';
+import { TareaPageRoutingModule } from './tarea-routing.module';
 
-import { TaskPage } from './task.page';
+import { TareaPage } from './tarea.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TaskPageRoutingModule
+    TareaPageRoutingModule
   ],
-  declarations: [TaskPage]
+  declarations: [TareaPage]
 })
-export class TaskPageModule {}
+export class TareaPageModule {}

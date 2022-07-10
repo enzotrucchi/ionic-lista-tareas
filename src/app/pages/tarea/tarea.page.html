@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{tarea.id !== undefined ? 'Modificar' : 'Nueva'}} Tarea</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <ion-item>
+      <ion-label position="floating">Titulo</ion-label>
+      <ion-input [(ngModel)]="tarea.titulo" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-input [(ngModel)]="tarea.descripcion" type="text"></ion-input>
+    </ion-item>
+
+    <p>
+      <ion-button expand="block" color="success" fill="outline" (click)="guardar()">GUARDAR</ion-button>
+    </p>
+
+  </div>
+</ion-content>

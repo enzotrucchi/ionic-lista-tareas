@@ -1,33 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Lista de Tareas</ion-title>
+    <ion-title>Mis tareas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    <ion-button expand="block" color="success">
-      <ion-label>Agregar tarea</ion-label>
-    </ion-button>
 
-    <ion-list *ngFor="let task of [1,2,3,4]; let i = index">
-      <ion-item-sliding>
-        <ion-item>
-          <ion-label>
-            Task {{i + 1}}
-          </ion-label>
+    <div *ngIf="this.tareas && this.tareas.length > 0">
 
-          <ion-button>
-            <ion-icon name="pencil"></ion-icon>
-          </ion-button>
-        </ion-item>
 
-        <ion-item-options>
-          <ion-item-option color="danger">
-            <ion-icon name="trash"></ion-icon>
-          </ion-item-option>
-        </ion-item-options>
-      </ion-item-sliding>
-    </ion-list>
+      <ion-list *ngFor="let tarea of this.tareas; let i = index">
+        <ion-item-sliding>
+          <ion-item>
+            <ion-label>
+              {{tarea.titulo}}
+            </ion-label>
+
+            <!-- <ion-button color="medium" fill="outline">
+              <ion-icon name="checkmark"></ion-icon>
+            </ion-button> -->
+          </ion-item>
+
+          <ion-item-options>
+            <ion-item-option (click)="eliminar(tarea)" color="danger">
+              <ion-icon name="trash"></ion-icon>
+            </ion-item-option>
+
+            <ion-item-option color="primary" (click)="abrirPaginaTarea(tarea.id)">
+              <ion-icon name="pencil"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </div>
+
+    <ion-button expand="block" color="success" fill="outline" (click)="abrirPaginaTarea()">AGREGAR</ion-button>
+
   </div>
 </ion-content>

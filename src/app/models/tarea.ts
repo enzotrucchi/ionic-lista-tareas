@@ -1,4 +1,4 @@
-export interface Task {
+export interface ITarea {
     id?:            number;
     titulo:         string;
     descripcion:    string;

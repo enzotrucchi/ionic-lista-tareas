@@ -12,8 +12,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'task',
-    loadChildren: () => import('./pages/task/task.module').then( m => m.TaskPageModule)
+    path: 'tarea',
+    loadChildren: () => import('./pages/tarea/tarea.module').then( m => m.TareaPageModule)
+  },
+  {
+    path: 'tarea/:id',
+    loadChildren: () => import('./pages/tarea/tarea.module').then( m => m.TareaPageModule)
   },
 ];
 
