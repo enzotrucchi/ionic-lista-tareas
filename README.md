@@ -1,7 +1,8 @@
 #  Ionic lista de tareas con IonicStorage
 
-### 🧉 Posteado originalmente en dev . to: [Link al post](https://dev.to/enzotrucchi/todo-list-o-lista-de-tareas-en-ionic-2idn)
+👉🏾 [Post completo](https://dev.to/enzotrucchi/todo-list-o-lista-de-tareas-en-ionic-2idn) en DEV blog.
 
+👉🏾 [Demo](https://ionic-todo-list-7e44b.web.app/) operativa.
 
 🎯 Proyecto realizado con Ionic 6 y utilizando Ionic Storage. Permite agregar, modificar, eliminar tareas.
 Se presentan en una lista.
@@ -26,4 +27,12 @@ ionic serve
 
 ###  App funcionando
 
-<img width="100%" style="width:100%" src="https://media.giphy.com/media/l6x3rJ3HRNtBSKUOV3/giphy.gif">
+<img style="width:30%" src="https://media.giphy.com/media/l6x3rJ3HRNtBSKUOV3/giphy.gif">
+
+
+
+
+&nbsp;
+
+
+[![Invitame un café en cafecito.app](https://cdn.cafecito.app/imgs/buttons/button_6.svg)](https://cafecito.app/enzotrucchi)
